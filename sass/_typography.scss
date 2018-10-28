@@ -1,0 +1,52 @@
+html, body {
+  color: $text-primary;
+  font-family: 'Muli', serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+
+  @media screen and (min-width: 1920px) {
+    font-size: 16px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.5;
+}
+
+h2 {
+  color: $border;
+  font-size: 36px;
+}
+
+h4 {
+  color: $primary-blue;
+  font-family: 'Roboto Slab', serif;
+  font-size: 12px;
+}
+
+p.highlight {
+  color: $primary-blue;
+  font-weight: 900;
+  font-size: 22px;
+  margin: 20px 0;
+
+  @media screen and (min-width: 1920px) {
+    font-size: 30px;
+  }
+}
+
+p.section {
+  color: $text-heading;
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+p.icon-label {
+  color: $primary-blue;
+  font-family: 'Roboto Slab', serif;
+  font-size: 12px;
+  text-transform: uppercase;
+}

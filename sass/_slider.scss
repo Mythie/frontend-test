@@ -1,0 +1,21 @@
+@import "variables.scss";
+
+#slider-bars {
+  max-width: calc(100% - 20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-bottom: 20px;
+}
+
+.slider-bar {
+  height: 4px;
+  width: 5vw;
+  margin: 0 5px;
+  background: #000;
+}
+
+.slider-bar-active {
+  background: $primary-orange;
+}

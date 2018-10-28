@@ -1,0 +1,58 @@
+@import "variables.scss";
+
+.grid {
+  overflow: hidden;
+  // display: flex;
+  // flex-wrap: wrap;
+  // align-items: flex-start;
+  // justify-content: flex-start;
+  // justify-content: space-between;
+  margin: 0 -10px;
+}
+
+.grid-item {
+  width: calc(100% - 20px);
+  margin: 10px;
+  
+  @media screen and (min-width: $breakpoint-tablet) {
+    float: left;
+  }
+
+  &.quarter {
+    @media screen and (min-width: 768px) {
+      width: calc(25% - 20px);
+    }
+  }
+
+  &.half {
+    @media screen and (min-width: 768px) {
+      width: calc(50% - 20px);
+    }
+  }
+}
+
+.icon-item {
+  display: flex;
+  align-items: center;
+
+  // On anything smaller than a small desktop use specifity to break the center-block rule
+  // Have to use a max-width rule here as it's annoying to unset
+  img.icon {
+    @media screen and (max-width: ($breakpoint-desktop-small - 1)) {
+      display: inline-block;
+      margin: 0 20px 0 0;
+    }
+  }
+
+  // On anything smaller than a small desktop take up 100%
+  // Have to use a max-width rule here as it's annoying to unset
+  &.grid-item {
+    @media screen and (max-width: ($breakpoint-desktop-small - 1)) {
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 1366px) {
+    display: block;
+  }
+}

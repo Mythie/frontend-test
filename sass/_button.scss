@@ -1,0 +1,58 @@
+@import "variables.scss";
+
+button, input[type="button"], input[type="submit"] {
+  color: $primary-blue;
+  background: transparent;
+  padding: 0;
+  border: 1px solid $primary-orange;
+  height: 40px;
+  overflow: hidden;
+
+  &:hover {
+    background: $primary-blue;
+    color: rgba(255, 255, 255, 1);
+    border-color: darken($primary-blue, 5%);
+    transition: 0.5s ease-in;
+
+    span.icon {
+      background: $primary-blue !important;
+      transition: 0.5s ease-in;
+    }
+  }
+
+  span {
+    display: inline-block;
+    line-height: 40px;
+    height: 38px;
+  }
+  
+  span.message {
+    padding: 0 40px 0 20px;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 1920px) {
+      font-size: 12px;
+    }
+  }
+
+  span.icon {
+    background: $primary-orange;
+    padding: 0 10px;
+
+    object {
+      display: inline-block;     
+      height: 17px;
+      width: 17px;
+    }  
+
+    img {
+      display: inline-block;
+      height: 17px;
+      width: 17px;
+    }
+  }
+}
+
+

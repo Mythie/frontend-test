@@ -1,0 +1,24 @@
+img.icon {
+  height: 37px;
+  width: 37px;
+
+  @media screen and (min-width: 768px) {
+    height: 40px;
+    width: 40px;
+  }
+  
+  @media screen and (min-width: 1366px) {
+    height: 70px;
+    width: 70px;
+  }
+  
+  @media screen and (min-width: 1920px) {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+img.center-block {
+  display: block;
+  margin: 0 auto;
+}

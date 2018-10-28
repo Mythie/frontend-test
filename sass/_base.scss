@@ -1,0 +1,35 @@
+@import "variables.scss";
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html, body {
+  background: $panel;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media screen and (min-width: 1170px) {
+    padding: 0;
+  }
+}
+
+header {
+  padding: 20px 0 0 0;
+}
+
+img.img-responsive {
+  width: 100%;
+}
+
+img.image-item {
+
+  &:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+  }
+}
