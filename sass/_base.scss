@@ -28,6 +28,10 @@ img.img-responsive {
 
 img.image-item {
 
+  @media screen and (max-width: ($breakpoint-tablet - 1)) {
+    display: none;
+  }
+
   &:hover {
     opacity: 0.8;
     transition: 0.5s;

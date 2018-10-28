@@ -1,7 +1,13 @@
 @import "variables.scss";
 
+#slider {
+  @media screen and (min-width: $breakpoint-tablet) {
+    display: none;
+  }
+}
+
 #slider-bars {
-  max-width: calc(100% - 20px);
+  width: calc(100% - 20px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,6 +20,10 @@
   width: 5vw;
   margin: 0 5px;
   background: #000;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    display: none;
+  }
 }
 
 .slider-bar-active {
