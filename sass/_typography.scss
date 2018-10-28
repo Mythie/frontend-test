@@ -25,13 +25,25 @@ h4 {
   font-size: 12px;
 }
 
+p {
+  font-size: 14px;
+
+  @media screen and (min-width: $breakpoint-desktop-small) {
+    font-size: 16px;
+  }
+}
+
 p.highlight {
   color: $primary-blue;
   font-weight: 900;
   font-size: 22px;
   margin: 20px 0;
 
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 24px;
+  }
+
+  @media screen and (min-width: $breakpoint-desktop-small) {
     font-size: 30px;
   }
 }
@@ -39,9 +51,18 @@ p.highlight {
 p.section {
   color: $text-heading;
   font-family: 'Roboto Slab', serif;
-  font-size: 18px;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1px;
+
+  @media screen and (min-wdith: $breakpoint-tablet) {
+    font-size: 16px;
+  }
+
+
+  @media screen and (min-width: $breakpoint-desktop-small) {
+    font-size: 18px;
+  }
 }
 
 p.icon-label {
