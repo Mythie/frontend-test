@@ -26,6 +26,12 @@ img.img-responsive {
   width: 100%;
 }
 
+.image-item-container {
+  @media screen and (max-width: ($breakpoint-tablet - 1px)) {
+    display: none;
+  }
+}
+
 img.image-item {
 
   @media screen and (max-width: ($breakpoint-tablet - 1)) {
